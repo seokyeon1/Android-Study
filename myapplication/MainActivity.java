@@ -56,15 +56,14 @@ public class MainActivity extends AppCompatActivity {
 
         buttonSquared.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                hi++;
-            }
+            public void onClick(View view) { hi++; }
         });
 
         buttonPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                intent.putExtra("some_key", "String data");
                 startActivity(intent);
             }
         });
