@@ -11,8 +11,12 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    /*
+    1. 전역변수
+    2. intent를 통해서
+     */
     int count = 0;
-    int hi = 1;
+    public static int hi = 1;
     Button buttonUp;
     Button buttonDown;
     Button buttonSquared;
@@ -29,8 +33,6 @@ public class MainActivity extends AppCompatActivity {
         textView = findViewById(R.id.textView);
         buttonSquared = findViewById(R.id.button3);
         buttonPage = findViewById(R.id.button5);
-
-        Intent intent = getIntent();
 
         buttonUp.setOnClickListener(new View.OnClickListener() {
             @Override
